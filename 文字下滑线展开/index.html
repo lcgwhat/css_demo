@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字下划线展开</title>
+</head>
+<style>
+    .title {
+        color: #333;
+        line-height: 2;
+    }
+    .title span{
+        padding: 4px;
+        background: linear-gradient(to right, #ec695c, #888) no-repeat right bottom;
+        background-size: 0% 2px;
+        transition: background-size 1300ms;
+    }
+    .title span:hover{
+        background-size: 100% 2px;
+        background-position-x: left;
+    }
+</style>
+<body>
+<h2 class="title">
+    <span>Lorem ipsum dolor sit.</span>
+</h2>
+
+</body>
+</html>

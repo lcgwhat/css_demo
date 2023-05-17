@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字交融展开</title>
+</head>
+<style>
+    .container{
+        filter: contrast(30);
+        font-size: 2rem;
+        padding: 30px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 100px;
+        animation: showup 3s forwards;
+    }
+    @keyframes showup {
+        from {
+            letter-spacing: -50px;
+            filter: blur(10px);
+        }
+        to {
+            letter-spacing: 10px;
+            filter: blur(2px);
+        }
+    }
+</style>
+<body>
+<p>文字交融展开</p>
+<div class="container">
+    <span class="text">Lorem ipsum dolor !</span>
+</div>
+</body>
+</html>
