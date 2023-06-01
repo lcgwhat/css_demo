@@ -1,3 +1,4 @@
+//参考 https://v.douyin.com/Uue2o7T/
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d', {
     willReadFrequently: true,
