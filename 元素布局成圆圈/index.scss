@@ -36,12 +36,12 @@ $pDeg: calc(360deg / $n);
                 img{
                     --initDeg: #{-$d};
                     transform: rotate(-$d);// 图片反向旋转
-                    animation: rotation linear infinite 20s inverse;
+                    animation: rotation linear infinite 20s reverse;
                 }
             }
         }
     }
-
+  --initDeg: 0deg;
 }
 
 @keyframes rotation {
