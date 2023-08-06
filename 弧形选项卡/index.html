@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .tab{
+            width: 150px;
+            height: 40px;
+            margin: 0 auto;
+            background: #ec695c;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            transform: perspective(30px) rotateX(20deg);
+            transform-origin: bottom;
+        }
+        .tab::before,.tab::after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            bottom: 0;
+            background-color: #888888;
+        }
+        .tab::before{
+            left: -10px;
+            background: radial-gradient(circle at 0 0,transparent 10px,#ec695c 10px);
+        }
+        .tab::after{
+            right: -10px;
+            background: radial-gradient(circle at 100% 0,transparent 10px,#ec695c 10px);
+        }
+    </style>
+</head>
+<body>
+怎么使左右两边的元素变成弧形，使用渐变 radial-gradient, 使用circle at 0 0 设置渐变的圆心
+<div class="container">
+    <div class="tab"></div>
+    <div class="tab"></div>
+</div>
+
+</body>
+</html>
